@@ -1,0 +1,223 @@
+/*style reset*/
+*{
+    box-sizing: border-box;
+    font: 100%/1.4 'Proxima Nova', Georgia, sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*buttons*/
+.button{
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+.button:hover{
+    opacity: 0.7;
+}
+
+.button__bordered{
+    background: #fff;
+    border: 1px solid #c9d0e1;
+    color: #a5abc5;
+}
+
+.button__green{
+    background: #5fcac6;
+    border: 1px solid #54aca9;
+    color: #fff;
+}
+
+/*font awesome icons*/
+
+.fas{
+    padding: 0 0.5em;
+}
+
+/*custom select*/
+
+.select__custom{
+    background: #f7f7fa;
+    border: none;
+    color: #9098b7;
+    padding: 1em 4em 1em 2em;
+    text-align-last: center; /*for Chrome only*/
+    appearance:none;
+    -moz-appearance:none; 
+    -webkit-appearance:none;
+}
+
+.select-container{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #d7d8e0;
+    border-radius: 3px;
+}
+
+.select-container:after {
+    content: '▼';
+    color: #9098b8;
+    right: 15px;
+    top: 0px;
+    height: 40px;
+    padding: 18px 0px 0px 13px;
+    border-left: 1px solid #d7d8e0;
+    position: absolute;
+    pointer-events: none;
+}
+
+select::-ms-expand {
+display: none;
+}
+
+
+
+/*custom radio buttons*/
+
+.radio_custom input[type="radio"]{
+    display: none;
+}
+
+.radio_custom input[type="radio"]:checked+label{
+    border: 5px solid #76a7e1;
+    border-radius: 5px;
+}
+
+.radio_custom input[type="radio"]:checked+label{
+    border: 5px solid #76a7e1;
+    border-radius: 5px;
+    position: relative;
+}
+
+.radio_custom input[type="radio"]:checked+label:before{
+    font-family: Font Awesome\ 5 Free;
+    background: #76a7e1;
+    color: #fff;
+    content: "\f058";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 150%;
+    width: 23px;
+    padding: 0 5px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.radio_custom label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+/*range slider*/
+input[type=range] {
+    -webkit-appearance: none;
+    width: 90%;
+    margin-top: 2em;
+    position: relative;
+    outline: none;
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: #edbe76;
+    margin-top: -10px;
+    z-index: 2;
+    position: relative;
+}
+  
+input[type=range]::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #d6d8e2;
+    position: absolute;
+    z-index: 1;
+}
+  
+input[type=range]:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #d6d8e2;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+  
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    width: 100%;
+    background: #eff0f5;
+    height: 10px;
+    border-radius: 10px;
+}
+
+/*colors*/
+.orange{
+    color: #edbe76;
+    font-weight: 700;
+}
