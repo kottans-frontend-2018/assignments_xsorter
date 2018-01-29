@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.min.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <title>HTML-forms</title>
+</head>
+<body>
+    <header class="header">
+        <button type="button" class="button button__bordered"> <i class="fas fa-long-arrow-alt-left"></i> Go back</button>
+        <img class="header__logo" src="img/header_circle.png" alt="header logo icon">
+        <button type="button" class="button button__bordered"> <i class="fas fa-user"></i> Sign in</button>
+    </header>
+
+    <main class="main__wrapper">
+        <form>
+            <section class="main__wrapper-head">
+                <div class="main__wrapper-head-stat">
+                    <p class="main__wrapper-head-title">
+                        <i class="fas fa-clipboard"></i>
+                        Your order
+                    </p>
+                    <ul>
+                        <li>
+                            <span>Items</span> 
+                            <span>2 documents</span>
+                        </li>
+                        <li>
+                            <span>Details</span>
+                            <span>2 languages</span>
+                        </li>
+                        <li>
+                            <span>Price</span>
+                            <span>$ 696.06</span>
+                        </li>
+                        <li>
+                            <span>Delivery</span>
+                            <span>48 hours*</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__wrapper-head-buttons">
+                    <button type="button" class="button button__green">Place order</button>
+                    <button type="button" class="button button__bordered">Print a quote</button>
+                </div>
+                <div class="main__wrapper-head-text">
+                    <div class="main__wrapper-head-text-outer">
+                        <h3>Help center</h3>    
+                        <p>
+                            If you need assistanse while placing your order,
+                            contact one of our beloved Project Manager by phone or email
+                        </p>   
+                        <address>
+                            <a href="tel:+9710555555">+971(0)555-555</a>&nbsp;
+                            <a href="mailto:help@qtest.com">help@qtest.com</a>        
+                        </address>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__top-options">
+                <h2>
+                    <span>Select what you want to translate</span>        
+                </h2>
+                
+                <div class="radio_wrapper">
+                    <div class="radio_custom">
+                        <input id="custom-radio-top-1" name="custom-radio-top" checked type="radio"/>
+                        <label for="custom-radio-top-1">
+                            <span>
+                                <img src="img/website.png" alt="website radio button">
+                            </span>
+                            <span>
+                                Website
+                            </span>
+                        </label>
+                        <span class="mark-icon none"></span>
+                    </div>
+                    <div class="radio_custom">
+                        <input id="custom-radio-top-2" name="custom-radio-top" type="radio"/>
+                        <label for="custom-radio-top-2">
+                            <span>
+                                <img src="img/document.png" alt="documents radio button">
+                            </span>
+                            <span>
+                                Documents
+                            </span>
+                        </label>
+                        <span class="mark-icon none"></span>
+                    </div>
+                    <div class="radio_custom">
+                        <input id="custom-radio-top-3" name="custom-radio-top" type="radio"/>
+                        <label for="custom-radio-top-3">
+                            <span>
+                                <img src="img/social.png" alt="social account radio button">
+                            </span>
+                            <span>
+                                Social account
+                            </span>
+                        </label>
+                        <span class="mark-icon none"></span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content__wrapper-outer">
+                <section class="content__wrapper">
+                    <h2>Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></h2>
+                    <div class="upload_wrapper">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Upload a new file</span>
+                        <input type="file" id="upload" name="upload"> 
+                    </div>
+                    <div class="upload_list">
+                        <table>
+                            <tr>
+                                <th>File name</th>
+                                <th>File size</th>
+                                <th>Number of words</th>
+                                <th>Remove</th>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-file-alt"></i>business_operations.docx</td>
+                                <td>78 kb</td>
+                                <td>842</td>
+                                <td>
+                                    <button type="button" class="button__empty">
+                                        <i title="remove file" class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-file-alt"></i>business_financial.docx</td>
+                                <td>26 kb</td>
+                                <td>2,326</td>
+                                <td>
+                                    <button type="button" class="button__empty">
+                                        <i title="remove file" class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="content__wrapper-outer">
+                <section class="content__wrapper">
+                    <h2>Choose your languages pairings</h2>
+                    <div class="flex_row-start content__wrapper-language">
+                        <p>From</p>
+                        <div class="select-container">
+                            <select class="select__custom" name="language-from" id="language-from">
+                                <option value="English">English</option>
+                                <option value="German">German</option>
+                                <option value="Ukrainian">Ukrainian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex_row-start content__wrapper-language">
+                        <p>To</p>
+                        <div class="select-container">
+                            <select class="select__custom" name="language-to" id="language-to">
+                                <option value="Arabic">Arabic</option>
+                                <option value="English">English</option>
+                                <option value="German">German</option>
+                                <option value="Ukrainian">Ukrainian</option>
+                            </select>
+                        </div>
+                        <div class="select-container">
+                            <select class="select__custom" name="language-to-second" id="language-to-second">
+                                <option value="Kurdish">Kurdish</option>
+                                <option value="English">English</option>
+                                <option value="Ukrainian">Ukrainian</option>
+                            </select>
+                        </div>
+                        <button type="button" class="button__empty">
+                            <i title="remove file" class="fas fa-trash"></i>
+                        </button>    
+                        <button type="button" class="button button__bordered"> <i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content__wrapper-outer content__wrapper-half">
+                <div class="content__wrapper-half-box">
+                    <section class="content__wrapper">
+                        <h2>Select your desired tone</h2>
+                        <div class="tone__wrapper">
+                            <div class="radio_custom">
+                                <input id="custom-radio-middle-1" name="custom-radio-middle" type="radio"/>
+                                <label for="custom-radio-middle-1">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Friendly/Casual</span>
+                                </label>
+                                <span class="mark-icon none"></span>
+                            </div>
+                            <div class="radio_custom">
+                                <input id="custom-radio-middle-2" name="custom-radio-middle" checked type="radio"/>
+                                <label for="custom-radio-middle-2">
+                                    <i class="fas fa-suitcase"></i>
+                                    <span>Corporate/Pro</span>
+                                </label>
+                                <span class="mark-icon none"></span>
+                            </div>
+                            <div class="radio_custom">
+                                <input id="custom-radio-middle-3" name="custom-radio-middle" type="radio"/>
+                                <label for="custom-radio-middle-3">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <span>Media/Formal</span>
+                                </label>
+                                <span class="mark-icon none"></span>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <section class="content__wrapper">
+                        <h2>Tell us how urgent this job is</h2>
+                        <div class="range__wrapper">
+                            <input type="range" min="0" max="100" step="50" value="50">
+                            <ul>
+                                <li>I got time</li>
+                                <li class="orange">Average</li>
+                                <li>Yesterday</li>
+                            </ul>
+                            <fieldset>
+                                <legend>
+                                    <i class="fas fa-info"></i>
+                                    <span class="legend-title">Timeline info</span>
+                                    <span class="legend-text">
+                                        With an <span class="orange">AVERAGE</span> timeline set up, our expert translator can take a 
+                                        reasonable amount of time perfecting your translation
+                                    </span>
+                                </legend>        
+                            </fieldset>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="content__wrapper-outer">
+                <section class="content__wrapper">
+                    <h2>Sign up and choose a payment method</h2>
+                    <div class="content__bottom">
+                        <p>
+                            Already have an account with us? <a href="#" title="Sign In">Sign In</a>.
+                        </p>
+                        <div class="flex_row-start">
+                            <div>
+                                <p class="title">Full name</p>
+                                <input name="name" id="name" required value="Mathieu Mayer" placeholder="">
+                                <label for="name"></label>
+                            </div>
+                        </div>
+                        <div class="flex_row-start">
+                            <div>
+                                <p class="title">Email adress</p>
+                                <input type="email" name="email" required id="email" value="mathieu.mm@me.com" placeholder="">
+                                <label for="email"></label>
+                            </div>
+                            <div>
+                                <p class="title">Choose a password</p>
+                                <input minlength="8"
+                                    type="password" 
+                                    name="password" 
+                                    id="password" 
+                                required title="Password length be 8 characters minimum">
+                                <label for="password"></label>
+                            </div>
+                        </div>
+                        <div class="flex_row-start">
+                            <div class="radio_custom">
+                                <input id="custom-radio-bottom-1" name="custom-radio-bottom" checked type="radio"/>
+                                <label for="custom-radio-bottom-1">
+                                    <span>
+                                        <img src="img/visa.png" alt="credit card radio button">
+                                    </span>
+                                </label>
+                                <span class="mark-icon none"></span>
+                            </div>
+                            <div class="radio_custom">
+                                <input id="custom-radio-bottom-2" name="custom-radio-bottom"  type="radio"/>
+                                <label for="custom-radio-bottom-2">
+                                    <span>
+                                        <img src="img/paypal.png" alt="paypal radio button">
+                                    </span>
+                                </label>
+                                <span class="mark-icon none"></span>
+                            </div>
+                            <div class="radio_custom">
+                                <input id="custom-radio-bottom-3" name="custom-radio-bottom"  type="radio"/>
+                                <label for="custom-radio-bottom-3">
+                                    <span>
+                                        <img src="img/amazon.png" alt="amazon radio button">
+                                    </span>
+                                </label>
+                                <span class="mark-icon none"></span>
+                            </div>
+                        </div>
+                        <div class="flex_row-start">
+                            <div>
+                                <p class="title">Card number</p>
+                                <input type="text" name="card" class="card-input" id="card" title="enter 16 digit card number" maxlength="16" placeholder="">
+                                <label for="card"></label>
+                            </div>
+                            <div>
+                                <p class="title">Expiery date</p>
+                                <input name="expiery" id="expiery" class="expiery-input" title="enter expiery card date" maxlength="10" placeholder="DD/MM/YYYY">
+                                <label for="expiery"></label>
+                            </div>
+                            <div>
+                                <p class="title">Code</p>
+                                <input type="text" pattern="\d{3,4}" class="code-input" title="enter CVV card code (3 or 4 digit)" name="code" id="code">
+                                <label for="code"></label>
+                            </div>
+                        </div>
+                        <div class="flex_row-end">
+                            <label for="agree">I agree to the <a href="#">Terms & Conditions</a></label>
+                            <input type="checkbox" name="agree" id="agree" value="0">
+                            <button class="button button__green">Place order</button>
+                            <button type="button" class="button button__bordered">Print a quote</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__wrapper">
+            <div>
+                <i class="far fa-heart"></i>
+                <h3>What we do</h3>
+                <p>
+                    We provide a full range of language services including content development, 
+                    document, website and social media accounts translations.
+                </p>
+            </div>
+            <div>
+                <i class="far fa-compass"></i>
+                <h3>Our main office</h3>
+                <address>
+                    <ul>
+                        <li>Dubai, UAE</li>
+                        <li>P.O. Box: 502735</li>
+                        <li>Phone: <a href="tel:+971(0)44278128">+971(0)44278128</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div>
+                <i class="fas fa-share-alt"></i>
+                <h3>Connect with us</h3>
+                <ul class="social-list">
+                    <li><i class="fab fa-facebook-f"></i><a title="Facebook" href="#">Facebook</a></li>
+                    <li><i class="fab fa-twitter"></i><a title="Twitter" href="#">Twitter</a></li>
+                    <li><i class="fab fa-linkedin-in"></i><a title="Linkedin" href="#">Linkedin</a></li>
+                </ul>
+            </div>
+            <img src="img/footer_circle.png" alt="footer-logo">
+        </section>
+    </footer>
+    
+</body>
+</html>
+
