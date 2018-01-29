@@ -177,6 +177,7 @@ body{
     border: 1px solid #c9d0e1;
     width: 30%;
     border-radius: 5px;
+    position: relative;
 }
 .main__top-options .radio_wrapper div label{
     padding: 2em 0;
@@ -423,6 +424,7 @@ body{
     height: 4em;
     min-width: 260px;
     color: #9098b8;
+    position: relative;
 }
 .content__wrapper .tone__wrapper .radio_custom label{
     flex-direction: row;
@@ -572,7 +574,7 @@ input:not([type="radio"]):invalid+label:before{
     text-align: center;
 }
 .content__wrapper .content__bottom .flex_row-start
-#card+label:before{
+.card-input+label:before{
     font-family: Font Awesome\ 5 Free;
     color: #d7d9e0;
     content: "\f09d";
@@ -586,57 +588,59 @@ input:not([type="radio"]):invalid+label:before{
     border-radius: 100%;
     text-align: center;
 }
-.content__wrapper .content__bottom .flex_row-start #card{
+.card-input{
     min-width: 260px;
 }
-.content__wrapper .content__bottom .flex_row-start #expiery{
+.expiery-input{
     text-align: center;
     letter-spacing: 2px;
     padding: 0.5em 1em;
     max-width: 180px;
 }
-.content__wrapper .content__bottom .flex_row-start #code{
+.code-input{
     text-align: center;
-    padding: 0.5em 2em;
     max-width: 140px;
 }
-.content__wrapper .content__bottom .flex_row-start, #expiery+label:before, #code+label:before{
-    content: ''
+.card-input+label:before,
+.expiery-input+label:before, 
+.code-input+label:before{
+    display: none;
 }
-.content__wrapper .content__bottom .flex_row-start input[type="password"]{
+.content__bottom .flex_row-start input[type="password"]{
     font-weight: 700;
     letter-spacing: 5px;
 }
-.content__wrapper .content__bottom .flex_row-start .radio_custom{
+.content__bottom .flex_row-start .radio_custom{
     background: #f7f7fa;
     border: 1px solid #c9d0e1;
     width: 20%;
     border-radius: 5px;
+    position: relative;
 }
-.content__wrapper .content__bottom .flex_row-start .radio_custom label{
+.content__bottom .flex_row-start .radio_custom label{
     padding: 1.5em 0;
 }
-.content__wrapper .content__bottom .flex_row-start .radio_custom img{
+.content__bottom .flex_row-start .radio_custom img{
     max-height: 30px;
 }
 @media screen and (max-width: 960px),(min-resolution:270dpi){
-    .content__wrapper .content__bottom .flex_row-start{
+    .content__bottom .flex_row-start{
         justify-content: center;
         flex-wrap: wrap;
     }
-    .content__wrapper .content__bottom .flex_row-start .radio_custom{
+    .content__bottom .flex_row-start .radio_custom{
         width: 80%;
         margin-top: 1em;
     }
-    .content__wrapper .content__bottom .flex_row-start div{
+    .content__bottom .flex_row-start div{
         margin: 0 0 0 1em;
     }
 }
 @media screen and (max-width: 760px),(min-resolution:270dpi){
-    .content__wrapper .content__bottom .flex_row-start{
+    .content__bottom .flex_row-start{
         flex-direction: column;
     }
-    .content__wrapper .content__bottom .flex_row-start div{
+    .content__bottom .flex_row-start div{
         margin: 1em 0 0 0;
     }
 }
