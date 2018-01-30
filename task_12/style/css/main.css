@@ -74,7 +74,7 @@ table {
 }
 
 /* line 1, ../sass/header.sass */
-.header {
+header {
   background: linear-gradient(to right, #e65c00, #f9d423);
   padding: 0.5em;
   display: flex;
@@ -82,20 +82,20 @@ table {
   align-items: center;
 }
 /* line 7, ../sass/header.sass */
-.header__time {
+header .time {
   padding: 0.3em 0.5em;
   color: #fff;
   font-size: 18px;
 }
 @media screen and (max-width: 480px), (min-resolution: 270dpi) {
   /* line 7, ../sass/header.sass */
-  .header__time {
+  header .time {
     order: 2;
   }
 }
 @media screen and (max-width: 480px), (min-resolution: 270dpi) {
   /* line 13, ../sass/header.sass */
-  .header__logo {
+  header .logo {
     width: 100%;
     text-align: center;
     margin-bottom: 0.5em;
@@ -103,12 +103,12 @@ table {
   }
 }
 /* line 19, ../sass/header.sass */
-.header__logo img {
+header .logo img {
   max-width: 100px;
   filter: drop-shadow(5px 4px 3px rgba(0, 0, 0, 0.65));
 }
 /* line 22, ../sass/header.sass */
-.header__login {
+header .login {
   background: rgba(255, 255, 255, 0.85);
   padding: 0.3em 0.5em;
   border-radius: 3px;
@@ -116,33 +116,33 @@ table {
   transition: all ease-out 0.2s;
 }
 /* line 28, ../sass/header.sass */
-.header__login a {
+header .login a {
   text-decoration: none;
   color: #424242;
 }
 /* line 31, ../sass/header.sass */
-.header__login a:hover {
+header .login a:hover {
   text-decoration: underline;
 }
-/* line 34, ../sass/header.sass */
-.header__login:hover {
+/* line 33, ../sass/header.sass */
+header .login:hover {
   background: none;
 }
 @media screen and (max-width: 480px), (min-resolution: 270dpi) {
   /* line 22, ../sass/header.sass */
-  .header__login {
+  header .login {
     order: 3;
   }
 }
 @media screen and (max-width: 480px), (min-resolution: 270dpi) {
   /* line 1, ../sass/header.sass */
-  .header {
+  header {
     flex-wrap: wrap;
   }
 }
 
 /* line 1, ../sass/content.sass */
-.main {
+main {
   background: #fff;
   width: 100%;
   max-width: 1160px;
@@ -151,20 +151,22 @@ table {
   filter: drop-shadow(4px 5px 6px rgba(0, 0, 0, 0.2));
 }
 /* line 8, ../sass/content.sass */
-.main__button {
+main .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
 }
+
 /* line 14, ../sass/content.sass */
-.main__wrapper {
+.wrapper {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-/* line 18, ../sass/content.sass */
-.main__wrapper--item {
+
+/* line 19, ../sass/content.sass */
+.pizza {
   background: #efefef;
   width: 100%;
   max-width: 300px;
@@ -177,34 +179,34 @@ table {
   position: relative;
 }
 @media screen and (max-width: 1024px), (min-resolution: 270dpi) {
-  /* line 18, ../sass/content.sass */
-  .main__wrapper--item {
+  /* line 19, ../sass/content.sass */
+  .pizza {
     max-width: 350px;
     margin: 0 0 1em 0;
   }
 }
 @media screen and (max-width: 800px), (min-resolution: 270dpi) {
-  /* line 18, ../sass/content.sass */
-  .main__wrapper--item {
+  /* line 19, ../sass/content.sass */
+  .pizza {
     max-width: 500px;
     padding: 1em;
   }
 }
-/* line 35, ../sass/content.sass */
-.main__wrapper--item .absolute {
+/* line 36, ../sass/content.sass */
+.pizza .absolute {
   position: absolute;
   width: 100px;
   top: -15px;
   right: -25px;
 }
 @media screen and (max-width: 800px), (min-resolution: 270dpi) {
-  /* line 35, ../sass/content.sass */
-  .main__wrapper--item .absolute {
+  /* line 36, ../sass/content.sass */
+  .pizza .absolute {
     display: none;
   }
 }
-/* line 42, ../sass/content.sass */
-.main__wrapper--image {
+/* line 43, ../sass/content.sass */
+.pizza__image {
   background: #fff;
   width: 100%;
   max-width: 250px;
@@ -212,38 +214,38 @@ table {
   overflow: hidden;
 }
 @media screen and (max-width: 1024px), (min-resolution: 270dpi) {
-  /* line 42, ../sass/content.sass */
-  .main__wrapper--image {
+  /* line 43, ../sass/content.sass */
+  .pizza__image {
     max-width: 300px;
   }
 }
 @media screen and (max-width: 800px), (min-resolution: 270dpi) {
-  /* line 42, ../sass/content.sass */
-  .main__wrapper--image {
+  /* line 43, ../sass/content.sass */
+  .pizza__image {
     max-width: 450px;
     min-height: auto;
   }
 }
-/* line 53, ../sass/content.sass */
-.main__wrapper--image img {
+/* line 54, ../sass/content.sass */
+.pizza__image img {
   width: 100%;
   height: 100%;
   filter: contrast(150%) sepia(60%) hue-rotate(10deg);
   transition: all ease-out 0.2s;
 }
-/* line 58, ../sass/content.sass */
-.main__wrapper--image img:hover {
+/* line 59, ../sass/content.sass */
+.pizza__image img:hover {
   filter: none;
   transform: scale(1.15);
 }
 @media screen and (max-width: 1024px), (min-resolution: 270dpi) {
-  /* line 53, ../sass/content.sass */
-  .main__wrapper--image img {
+  /* line 54, ../sass/content.sass */
+  .pizza__image img {
     filter: none;
   }
 }
-/* line 63, ../sass/content.sass */
-.main__wrapper--text {
+/* line 64, ../sass/content.sass */
+.pizza__text {
   background: #fff;
   width: 100%;
   max-width: 250px;
@@ -252,29 +254,29 @@ table {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 @media screen and (max-width: 1024px), (min-resolution: 270dpi) {
-  /* line 63, ../sass/content.sass */
-  .main__wrapper--text {
+  /* line 64, ../sass/content.sass */
+  .pizza__text {
     max-width: 300px;
   }
 }
 @media screen and (max-width: 800px), (min-resolution: 270dpi) {
-  /* line 63, ../sass/content.sass */
-  .main__wrapper--text {
+  /* line 64, ../sass/content.sass */
+  .pizza__text {
     max-width: 450px;
   }
 }
-/* line 74, ../sass/content.sass */
-.main__wrapper--text div {
+/* line 75, ../sass/content.sass */
+.pizza__text div {
   display: flex;
   justify-content: space-between;
 }
-/* line 77, ../sass/content.sass */
-.main__wrapper--text div:nth-child(2) {
+/* line 78, ../sass/content.sass */
+.pizza__text div:nth-child(2) {
   margin-top: 0.5em;
 }
 
 /* line 1, ../sass/footer.sass */
-.footer {
+footer {
   padding: 2em 1em;
   background: #24292e;
   width: 100%;
@@ -285,24 +287,24 @@ table {
   font-size: 90%;
 }
 /* line 10, ../sass/footer.sass */
-.footer a {
+footer a {
   color: #ffffff;
   text-decoration: none;
 }
 /* line 13, ../sass/footer.sass */
-.footer a:hover {
+footer a:hover {
   text-decoration: underline;
   color: #d2d2d2;
 }
 @media screen and (max-width: 800px), (min-resolution: 270dpi) {
   /* line 17, ../sass/footer.sass */
-  .footer span:nth-child(2) {
+  footer span:nth-child(2) {
     margin-top: 1em;
   }
 }
 @media screen and (max-width: 800px), (min-resolution: 270dpi) {
   /* line 1, ../sass/footer.sass */
-  .footer {
+  footer {
     flex-direction: column;
   }
 }
