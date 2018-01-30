@@ -335,7 +335,7 @@ footer a:hover {
   color: #fff;
 }
 /* line 18, ../sass/buttons.sass */
-.button--stripe:before {
+.button--stripe::before {
   background: linear-gradient(to right, #067500 0%, #067500 50%, #034000 50%, #034000 100%);
   content: "";
   position: absolute;
@@ -347,7 +347,7 @@ footer a:hover {
   transition: 0.3s ease-in-out;
 }
 /* line 28, ../sass/buttons.sass */
-.button--stripe:after {
+.button--stripe::after {
   content: "";
   width: 0;
   height: 0;
@@ -365,7 +365,7 @@ footer a:hover {
   color: #fff;
 }
 /* line 42, ../sass/buttons.sass */
-.button--stripe:hover:before {
+.button--stripe:hover::before {
   border-top-color: #1a70ff;
   border-right-color: #1a70ff;
   margin-left: -100%;
@@ -374,7 +374,7 @@ footer a:hover {
   height: 100%;
 }
 /* line 49, ../sass/buttons.sass */
-.button--stripe:hover:after {
+.button--stripe:hover::after {
   right: 100%;
   transition: 0.3s ease-in-out;
   width: 0;
